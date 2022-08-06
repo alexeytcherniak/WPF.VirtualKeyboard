@@ -1,0 +1,494 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:options="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+                    >  
+
+    <!--  Shared Theme-insensitive Brushes  -->
+
+    <SolidColorBrush x:Key="BlackBrush" options:Freeze="True" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="WhiteBrush" options:Freeze="True" Color="{StaticResource WhiteColor}" />
+
+    <SolidColorBrush x:Key="GrayBrushFE" options:Freeze="True" Color="{StaticResource GrayColorFE}" />
+    <SolidColorBrush x:Key="GrayBrushFD" options:Freeze="True" Color="{StaticResource GrayColorFD}" />
+    <SolidColorBrush x:Key="GrayBrushFC" options:Freeze="True" Color="{StaticResource GrayColorFC}" />
+    <SolidColorBrush x:Key="GrayBrushFB" options:Freeze="True" Color="{StaticResource GrayColorFB}" />
+    <SolidColorBrush x:Key="GrayBrushFA" options:Freeze="True" Color="{StaticResource GrayColorFA}" />
+    <SolidColorBrush x:Key="GrayBrushF8" options:Freeze="True" Color="{StaticResource GrayColorF8}" />
+    <SolidColorBrush x:Key="GrayBrushF5" options:Freeze="True" Color="{StaticResource GrayColorF5}" />
+    <SolidColorBrush x:Key="GrayBrushF0" options:Freeze="True" Color="{StaticResource GrayColorF0}" />
+    <SolidColorBrush x:Key="GrayBrushE5" options:Freeze="True" Color="{StaticResource GrayColorE5}" />
+    <SolidColorBrush x:Key="GrayBrushE0" options:Freeze="True" Color="{StaticResource GrayColorE0}" />
+    <SolidColorBrush x:Key="GrayBrushE" options:Freeze="True"  Color="{StaticResource GrayColorE}" />
+    <SolidColorBrush x:Key="GrayBrushD" options:Freeze="True"  Color="{StaticResource GrayColorD}" />
+    <SolidColorBrush x:Key="GrayBrushC" options:Freeze="True"  Color="{StaticResource GrayColorC}" />
+    <SolidColorBrush x:Key="GrayBrushB" options:Freeze="True"  Color="{StaticResource GrayColorB}" />
+    <SolidColorBrush x:Key="GrayBrushA" options:Freeze="True"  Color="{StaticResource GrayColorA}" />
+    <SolidColorBrush x:Key="GrayBrush9" options:Freeze="True"  Color="{StaticResource GrayColor9}" />
+    <SolidColorBrush x:Key="GrayBrush8" options:Freeze="True"  Color="{StaticResource GrayColor8}" />
+    <SolidColorBrush x:Key="GrayBrush7" options:Freeze="True"  Color="{StaticResource GrayColor7}" />
+    <SolidColorBrush x:Key="GrayBrush6" options:Freeze="True"  Color="{StaticResource GrayColor6}" />
+    <SolidColorBrush x:Key="GrayBrush5" options:Freeze="True"  Color="{StaticResource GrayColor5}" />
+    <SolidColorBrush x:Key="GrayBrush4" options:Freeze="True"  Color="{StaticResource GrayColor4}" />
+    <SolidColorBrush x:Key="GrayBrush3" options:Freeze="True"  Color="{StaticResource GrayColor3}" />
+    <SolidColorBrush x:Key="GrayBrush2" options:Freeze="True"  Color="{StaticResource GrayColor2}" />
+    <SolidColorBrush x:Key="GrayBrush1" options:Freeze="True"  Color="{StaticResource GrayColor1}" />
+
+    <SolidColorBrush x:Key="BlackBrush90" options:Freeze="True" Opacity="0.90" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="BlackBrush80" options:Freeze="True" Opacity="0.80" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="BlackBrush70" options:Freeze="True" Opacity="0.70" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="BlackBrush60" options:Freeze="True" Opacity="0.60" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="BlackBrush50" options:Freeze="True" Opacity="0.50" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="BlackBrush40" options:Freeze="True" Opacity="0.40" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="BlackBrush30" options:Freeze="True" Opacity="0.30" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="BlackBrush25" options:Freeze="True" Opacity="0.25" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="BlackBrush20" options:Freeze="True" Opacity="0.20" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="BlackBrush15" options:Freeze="True" Opacity="0.15" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="BlackBrush10" options:Freeze="True" Opacity="0.10" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="BlackBrush08" options:Freeze="True" Opacity="0.08" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="BlackBrush05" options:Freeze="True" Opacity="0.05" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="BlackBrush02" options:Freeze="True" Opacity="0.02" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="BlackBrush01" options:Freeze="True" Opacity="0.01" Color="{StaticResource BlackColor}" />
+
+    <SolidColorBrush x:Key="WhiteBrush90" options:Freeze="True" Opacity="0.90" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="WhiteBrush80" options:Freeze="True" Opacity="0.80" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="WhiteBrush70" options:Freeze="True" Opacity="0.70" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="WhiteBrush60" options:Freeze="True" Opacity="0.60" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="WhiteBrush50" options:Freeze="True" Opacity="0.50" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="WhiteBrush40" options:Freeze="True" Opacity="0.40" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="WhiteBrush30" options:Freeze="True" Opacity="0.30" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="WhiteBrush25" options:Freeze="True" Opacity="0.25" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="WhiteBrush20" options:Freeze="True" Opacity="0.20" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="WhiteBrush15" options:Freeze="True" Opacity="0.15" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="WhiteBrush10" options:Freeze="True" Opacity="0.10" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="WhiteBrush05" options:Freeze="True" Opacity="0.05" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="WhiteBrush02" options:Freeze="True" Opacity="0.02" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="WhiteBrush01" options:Freeze="True" Opacity="0.01" Color="{StaticResource WhiteColor}" />
+
+    <!--  Accent brush  -->
+
+    <SolidColorBrush x:Key="AccentBrush" options:Freeze="True" Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="AccentBrush2" options:Freeze="True" Color="{StaticResource AccentColor2}" />
+    <SolidColorBrush x:Key="AccentBrush3" options:Freeze="True" Color="{StaticResource AccentColor3}" />
+    <SolidColorBrush x:Key="AccentBrush4" options:Freeze="True" Color="{StaticResource AccentColor4}" />
+    <SolidColorBrush x:Key="AccentBrush5" options:Freeze="True" Color="{StaticResource AccentColor5}" />
+    <SolidColorBrush x:Key="AccentBrush6" options:Freeze="True" Color="{StaticResource AccentColor6}" />
+    <SolidColorBrush x:Key="AccentBrush7" options:Freeze="True" Color="{StaticResource Color.GrayLightest}" />
+    <SolidColorBrush x:Key="AccentBrush8" options:Freeze="True" Color="{StaticResource AccentColor8}" />
+    <SolidColorBrush x:Key="AccentBrush9" options:Freeze="True" Color="{StaticResource AccentColor9}" />
+
+    <!--Primary brush-->
+    
+    <SolidColorBrush x:Key="PrimaryBrush" options:Freeze="True" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="PrimaryBrush90" options:Freeze="True" Opacity="0.9" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="PrimaryBrush80" options:Freeze="True" Opacity="0.8" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="PrimaryBrush70" options:Freeze="True" Opacity="0.7" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="PrimaryBrush60" options:Freeze="True" Opacity="0.6" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="PrimaryBrush50" options:Freeze="True" Opacity="0.5" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="PrimaryBrush40" options:Freeze="True" Opacity="0.4" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="PrimaryBrush30" options:Freeze="True" Opacity="0.3" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="PrimaryBrush25" options:Freeze="True" Opacity="0.25" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="PrimaryBrush20" options:Freeze="True" Opacity="0.20" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="PrimaryBrush15" options:Freeze="True" Opacity="0.15" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="PrimaryBrush10" options:Freeze="True" Opacity="0.10" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="PrimaryBrush05" options:Freeze="True" Opacity="0.05" Color="{StaticResource PrimaryColor}" />
+
+    <!--Highlight brush-->
+    
+    <SolidColorBrush x:Key="HighlightBrush" options:Freeze="True" Color="{StaticResource HighlightColor}" />
+    <SolidColorBrush x:Key="HighlightBrush90" options:Freeze="True" Opacity="0.9" Color="{StaticResource HighlightColor}" />
+    <SolidColorBrush x:Key="HighlightBrush80" options:Freeze="True" Opacity="0.8" Color="{StaticResource HighlightColor}" />
+    <SolidColorBrush x:Key="HighlightBrush70" options:Freeze="True" Opacity="0.7" Color="{StaticResource HighlightColor}" />
+    <SolidColorBrush x:Key="HighlightBrush60" options:Freeze="True" Opacity="0.6" Color="{StaticResource HighlightColor}" />
+    <SolidColorBrush x:Key="HighlightBrush50" options:Freeze="True" Opacity="0.5" Color="{StaticResource HighlightColor}" />
+    <SolidColorBrush x:Key="HighlightBrush40" options:Freeze="True" Opacity="0.4" Color="{StaticResource HighlightColor}" />
+    <SolidColorBrush x:Key="HighlightBrush30" options:Freeze="True" Opacity="0.3" Color="{StaticResource HighlightColor}" />
+    <SolidColorBrush x:Key="HighlightBrush25" options:Freeze="True" Opacity="0.25" Color="{StaticResource HighlightColor}" />
+    <SolidColorBrush x:Key="HighlightBrush20" options:Freeze="True" Opacity="0.20" Color="{StaticResource HighlightColor}" />
+    <SolidColorBrush x:Key="HighlightBrush15" options:Freeze="True" Opacity="0.15" Color="{StaticResource HighlightColor}" />
+    <SolidColorBrush x:Key="HighlightBrush10" options:Freeze="True" Opacity="0.10" Color="{StaticResource HighlightColor}" />
+    <SolidColorBrush x:Key="HighlightBrush05" options:Freeze="True" Opacity="0.05" Color="{StaticResource HighlightColor}" />
+    
+    <SolidColorBrush x:Key="FocusVisualBrush" options:Freeze="True" Color="{StaticResource WhiteColor}" Opacity="0.05"/>
+
+    <!--  Theme brush  -->
+
+    <SolidColorBrush options:Freeze="True" x:Key="TintBrush.10" Color="{StaticResource TintColor.10}" />
+    <SolidColorBrush options:Freeze="True" x:Key="TintBrush.20" Color="{StaticResource TintColor.20}" />
+    <SolidColorBrush options:Freeze="True" x:Key="TintBrush.30" Color="{StaticResource TintColor.30}" />
+    <SolidColorBrush options:Freeze="True" x:Key="TintBrush.40" Color="{StaticResource TintColor.40}" />
+    <SolidColorBrush options:Freeze="True" x:Key="TintBrush.50" Color="{StaticResource TintColor.50}" />
+    <SolidColorBrush options:Freeze="True" x:Key="TintBrush.60" Color="{StaticResource TintColor.60}" />
+
+    <SolidColorBrush x:Key="Brush.Black" options:Freeze="True" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="Brush.White" options:Freeze="True" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="Brush.Smoke" options:Freeze="True" Color="{StaticResource Color.Smoke}"/>
+    <SolidColorBrush x:Key="Brush.WhiteSmoke" options:Freeze="True" Color="{StaticResource Color.WhiteSmoke}" />
+    <SolidColorBrush x:Key="Brush.SilverLightest" options:Freeze="True" Color="{StaticResource Color.SilverLightest}"/>
+    <SolidColorBrush x:Key="Brush.SilverLight" options:Freeze="True" Color="{StaticResource Color.SilverLight}" />
+    <SolidColorBrush x:Key="Brush.SilverDark" options:Freeze="True" Color="{StaticResource Color.SilverDark}" />
+    <SolidColorBrush x:Key="Brush.GrayLeft" options:Freeze="True" Color="{StaticResource Color.GrayLeft}" />
+    <SolidColorBrush x:Key="Brush.GrayLightest" options:Freeze="True" Color="{StaticResource Color.GrayLightest}" />
+    <SolidColorBrush x:Key="Brush.GrayLight" options:Freeze="True" Color="{StaticResource Color.GrayLight}" />
+    <SolidColorBrush x:Key="Brush.GrayDark" options:Freeze="True" Color="{StaticResource Color.GrayDark}" />
+    <SolidColorBrush x:Key="Brush.BlueLightest" options:Freeze="True" Color="{StaticResource Color.BlueLightest}" />
+    <SolidColorBrush x:Key="Brush.BlueLight" options:Freeze="True" Color="{StaticResource Color.BlueLight}" />
+    <SolidColorBrush x:Key="Brush.BlueDark.Transparent" options:Freeze="True" Color="{StaticResource Color.BlueDark}" Opacity="0.64"/>
+    <SolidColorBrush x:Key="Brush.BlueDark" options:Freeze="True" Color="{StaticResource Color.BlueDark}" />
+    <SolidColorBrush x:Key="Brush.BlueDarkest" options:Freeze="True" Color="{StaticResource Color.BlueDarkest}" />
+    <SolidColorBrush x:Key="Brush.OrangeLight" options:Freeze="True" Color="{StaticResource Color.OrangeLight}" />
+    <SolidColorBrush x:Key="Brush.OrangeDark" options:Freeze="True" Color="{StaticResource Color.OrangeDark}" />
+    <SolidColorBrush x:Key="Brush.GoldLight" options:Freeze="True" Color="{StaticResource Color.GoldLight}" />
+    <SolidColorBrush x:Key="Brush.GoldDark" options:Freeze="True" Color="{StaticResource Color.GoldDark}" />
+    <SolidColorBrush x:Key="Brush.BronzeDark" options:Freeze="True" Color="{StaticResource Color.BronzeDark}" />
+    <SolidColorBrush x:Key="Brush.BronzeLight" options:Freeze="True" Color="{StaticResource Color.BronzeLight}" />
+    
+    <SolidColorBrush x:Key="Brush.Critical" options:Freeze="True" Color="{StaticResource Color.Critical}" />
+
+    <SolidColorBrush x:Key="Brush.BackButton" options:Freeze="True" Color="{StaticResource Color.BackButton}" />
+    <SolidColorBrush x:Key="Brush.SeparatorLight" options:Freeze="True" Color="{StaticResource Color.SeparatorLight}" />
+
+    <SolidColorBrush x:Key="Background.SideMenu" options:Freeze="True" Color="{StaticResource GrayColorE0}" />
+    <SolidColorBrush x:Key="Background.Window" options:Freeze="True" Color="{StaticResource GrayColorF0}" />
+    <SolidColorBrush x:Key="Background.TopmostHeader" options:Freeze="True" Color="#336699" />
+    <SolidColorBrush x:Key="Background.TopHeader" options:Freeze="True" Color="#6699CC" />
+    <SolidColorBrush x:Key="Background.Veil" options:Freeze="True" Color="#66336699" />
+    <SolidColorBrush x:Key="Background.Alternation" options:Freeze="True" Color="#FBFBFC" />
+    <SolidColorBrush x:Key="Background.MouseOver" options:Freeze="True" Color="{StaticResource BackgroundColor.MouseOver}" />
+
+    <!--  Base Control Brushes  -->
+
+    <SolidColorBrush x:Key="TextBlock.Static.Foreground" options:Freeze="True" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="TextBlock.Label.Foreground" options:Freeze="True" Color="{StaticResource InputControlForeground.StaticColor}" />
+
+    <!-- CheckBox -->
+
+    <SolidColorBrush x:Key="CheckBox.Static.Foreground" options:Freeze="True" Color="{StaticResource InputControlForeground.StaticColor}" />
+    <SolidColorBrush x:Key="CheckBox.Static.Background" options:Freeze="True" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="CheckBox.Static.Border" options:Freeze="True" Color="{StaticResource PrimaryColor}" Opacity="0.5" />
+
+    <SolidColorBrush x:Key="CheckBox.Checked.Foreground" options:Freeze="True" Color="{StaticResource InputControlForeground.StaticColor}" />
+    <SolidColorBrush x:Key="CheckBox.Checked.Background" options:Freeze="True" Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="CheckBox.Checked.Border" options:Freeze="True" Color="{StaticResource AccentColor}" />
+
+    <SolidColorBrush x:Key="CheckBox.MouseOver.Foreground" options:Freeze="True" Color="{StaticResource InputControlForeground.MouseOverColor}" />
+    <SolidColorBrush x:Key="CheckBox.MouseOver.Background" options:Freeze="True" Color="{StaticResource BackgroundColor.MouseOver}" />
+    <SolidColorBrush x:Key="CheckBox.MouseOver.Border" options:Freeze="True" Color="{StaticResource BlackColor}" />
+
+    <SolidColorBrush x:Key="CheckBox.Indeterminate.Foreground" options:Freeze="True" Color="{StaticResource InputControlForeground.MouseOverColor}" />
+    <SolidColorBrush x:Key="CheckBox.Indeterminate.Background" options:Freeze="True" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="CheckBox.Indeterminate.Border" options:Freeze="True" Color="{StaticResource AccentColor}" />
+
+    <SolidColorBrush x:Key="CheckBox.Pressed.Foreground" options:Freeze="True" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="CheckBox.Pressed.Background" options:Freeze="True" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="CheckBox.Pressed.Border" options:Freeze="True" Color="{StaticResource BlackColor}" />
+
+    <!-- RadioButton -->
+
+    <SolidColorBrush x:Key="RadioButton.Static.Foreground" options:Freeze="True" Color="{StaticResource InputControlForeground.StaticColor}" />
+    <SolidColorBrush x:Key="RadioButton.Static.Background" options:Freeze="True" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="RadioButton.Static.Border" options:Freeze="True" Color="{StaticResource AccentColor}" />
+
+    <SolidColorBrush x:Key="RadioButton.Checked.Foreground" options:Freeze="True" Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="RadioButton.Checked.Background" options:Freeze="True" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="RadioButton.Checked.Border" options:Freeze="True" Color="{StaticResource AccentColor}" />
+
+    <SolidColorBrush x:Key="RadioButton.MouseOver.Foreground" options:Freeze="True" Color="{StaticResource InputControlForeground.MouseOverColor}" />
+    <SolidColorBrush x:Key="RadioButton.MouseOver.Background" options:Freeze="True" Color="{StaticResource BackgroundColor.MouseOver}" />
+    <SolidColorBrush x:Key="RadioButton.MouseOver.Border" options:Freeze="True" Color="{StaticResource BlackColor}" />
+
+    <SolidColorBrush x:Key="RadioButton.Pressed.Foreground" options:Freeze="True" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="RadioButton.Pressed.Background" options:Freeze="True" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="RadioButton.Pressed.Border" options:Freeze="True" Color="{StaticResource BlackColor}" />
+    
+    <!-- TextBox -->
+
+    <SolidColorBrush x:Key="TextBox.Static.Foreground" options:Freeze="True" Color="{StaticResource InputControlForeground.StaticColor}" />
+    <SolidColorBrush x:Key="TextBox.Static.Background" options:Freeze="True" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="TextBox.Static.Border" options:Freeze="True" Color="{StaticResource PrimaryColor}" Opacity="0.5" />
+
+    <SolidColorBrush x:Key="TextBox.MouseOver.Foreground" options:Freeze="True" Color="{StaticResource InputControlForeground.MouseOverColor}" />
+    <SolidColorBrush x:Key="TextBox.MouseOver.Background" options:Freeze="True" Color="{StaticResource BackgroundColor.MouseOver}" />
+    <SolidColorBrush x:Key="TextBox.MouseOver.Border" options:Freeze="True" Color="{StaticResource BlackColor}" />
+
+    <SolidColorBrush x:Key="TextBox.Focus.Foreground" options:Freeze="True" Opacity="0.85" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="TextBox.Focus.Background" options:Freeze="True" Color="{StaticResource BackgroundColor.Focused}" />
+    <SolidColorBrush x:Key="TextBox.Focus.Border" options:Freeze="True" Color="{StaticResource BlackColor}" />
+
+    <!--Button-->
+    <SolidColorBrush x:Key="Button.Static.Foreground" options:Freeze="True" Opacity="0.95" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="Button.Static.Background" options:Freeze="True" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="Button.Static.Border" options:Freeze="True" Color="{StaticResource PrimaryColor}" />
+
+    <SolidColorBrush x:Key="Button.MouseOver.Foreground" options:Freeze="True" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="Button.MouseOver.Background" options:Freeze="True" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="Button.MouseOver.Border" options:Freeze="True" Color="{StaticResource BlackColor}" />
+
+    <SolidColorBrush x:Key="Button.Pressed.Foreground" options:Freeze="True" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="Button.Pressed.Background" options:Freeze="True" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="Button.Pressed.Border" options:Freeze="True" Color="{StaticResource BlackColor}" />
+
+    <SolidColorBrush x:Key="Button.Disabled.Foreground" options:Freeze="True" Color="{StaticResource DisabledForegroundColor}" />
+    <SolidColorBrush x:Key="Button.Disabled.Background" options:Freeze="True" Color="{StaticResource DisabledBackgroundColor}" />
+    <SolidColorBrush x:Key="Button.Disabled.Border" options:Freeze="True" Color="{StaticResource DisabledBorderColor}" />
+
+    <!--Toggle Button-->
+    <SolidColorBrush x:Key="ToggleButton.Static.Foreground" options:Freeze="True" Opacity="0.95" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="ToggleButton.Static.Background" options:Freeze="True" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="ToggleButton.Static.Border" options:Freeze="True" Color="Transparent" />
+
+    <SolidColorBrush x:Key="ToggleButton.MouseOver.Foreground" options:Freeze="True" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="ToggleButton.MouseOver.Background" options:Freeze="True" Opacity="0.2" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="ToggleButton.MouseOver.Border" options:Freeze="True" Color="Transparent" />
+
+    <SolidColorBrush x:Key="ToggleButton.Pressed.Foreground" options:Freeze="True" Color="{StaticResource Color.WhiteSmoke}" />
+    <SolidColorBrush x:Key="ToggleButton.Pressed.Background" options:Freeze="True" Opacity="0.2" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="ToggleButton.Pressed.Border" options:Freeze="True" Color="Transparent" />
+
+    <SolidColorBrush x:Key="ToggleButton.Checked.Foreground" options:Freeze="True" Color="{StaticResource Color.WhiteSmoke}" />
+    <SolidColorBrush x:Key="ToggleButton.Checked.Background" options:Freeze="True" Opacity="0.2" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="ToggleButton.Checked.Border" options:Freeze="True" Color="Transparent" />
+
+    <SolidColorBrush x:Key="ToggleButton.Disabled.Foreground" options:Freeze="True" Color="{StaticResource DisabledTextColor}" />
+    <SolidColorBrush x:Key="ToggleButton.Disabled.Background" options:Freeze="True" Color="{StaticResource DisabledBackgroundColor}" />
+    <SolidColorBrush x:Key="ToggleButton.Disabled.Border" options:Freeze="True" Color="{StaticResource DisabledBorderColor}" />
+    
+    <!--ComboBox-->
+
+    <SolidColorBrush x:Key="ComboBox.Static.Foreground" options:Freeze="True" Color="{StaticResource InputControlForeground.StaticColor}" />
+    <SolidColorBrush x:Key="ComboBox.MouseOver.Foreground" options:Freeze="True" Color="{StaticResource InputControlForeground.MouseOverColor}" />
+    <SolidColorBrush x:Key="ComboBox.Pressed.Foreground" options:Freeze="True" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="ComboBox.Disabled.Foreground" options:Freeze="True" Color="{StaticResource DisabledTextColor}" />
+    
+    <SolidColorBrush x:Key="ComboBox.Static.Background" options:Freeze="True" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="ComboBox.Static.Border" options:Freeze="True" Color="{StaticResource BlackColor50}" />
+    <SolidColorBrush x:Key="ComboBox.Static.Editable.Background" options:Freeze="True" Color="{StaticResource GrayColorF8}" />
+    <SolidColorBrush x:Key="ComboBox.Static.Editable.Border" options:Freeze="True" Color="{StaticResource GrayColor9}" />
+    <SolidColorBrush x:Key="ComboBox.Static.Editable.Button.Background" options:Freeze="True" Color="{StaticResource GrayColorF8}" />
+    <SolidColorBrush x:Key="ComboBox.Static.Editable.Button.Border" options:Freeze="True" Color="Transparent" />
+    <SolidColorBrush x:Key="ComboBox.Static.Glyph" options:Freeze="True" Color="{StaticResource AccentColor}" />
+    
+    <SolidColorBrush x:Key="ComboBox.MouseOver.Glyph" options:Freeze="True" Color="{StaticResource Color.BlueDarkest}" />
+    <SolidColorBrush x:Key="ComboBox.MouseOver.Background" options:Freeze="True" Color="{StaticResource BackgroundColor.MouseOver}" />
+    <SolidColorBrush x:Key="ComboBox.MouseOver.Border" options:Freeze="True" Color="{StaticResource GrayColor7}" />
+    
+    <SolidColorBrush x:Key="ComboBox.MouseOver.Editable.Background" options:Freeze="True" Color="{StaticResource AccentColor5}" />
+    <SolidColorBrush x:Key="ComboBox.MouseOver.Editable.Border" options:Freeze="True" Color="{StaticResource GrayColor7}" />
+    <SolidColorBrush x:Key="ComboBox.MouseOver.Editable.Button.Background" options:Freeze="True" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="ComboBox.MouseOver.Editable.Button.Border" options:Freeze="True" Color="{StaticResource GrayColor7}" />
+    
+    <SolidColorBrush x:Key="ComboBox.Pressed.Glyph" options:Freeze="True" Color="{StaticResource Color.BlueDark}" />
+    <SolidColorBrush x:Key="ComboBox.Pressed.Background" options:Freeze="True" Color="{StaticResource Color.WhiteSmoke}" />
+    <SolidColorBrush x:Key="ComboBox.Pressed.Border" options:Freeze="True" Color="{StaticResource Color.BlueLight}" />
+    <SolidColorBrush x:Key="ComboBox.Pressed.Editable.Background" options:Freeze="True" Color="{StaticResource Color.WhiteSmoke}" />
+    <SolidColorBrush x:Key="ComboBox.Pressed.Editable.Border" options:Freeze="True" Color="{StaticResource Color.BlueLight}" />
+    <SolidColorBrush x:Key="ComboBox.Pressed.Editable.Button.Background" options:Freeze="True" Color="{StaticResource Color.WhiteSmoke}" />
+    <SolidColorBrush x:Key="ComboBox.Pressed.Editable.Button.Border" options:Freeze="True" Color="{StaticResource Color.BlueLight}" />
+    
+    <SolidColorBrush x:Key="ComboBox.Disabled.Glyph" options:Freeze="True" Color="#FFBFBFBF" />
+    <SolidColorBrush x:Key="ComboBox.Disabled.Background" options:Freeze="True" Color="#FFF0F0F0" />
+    <SolidColorBrush x:Key="ComboBox.Disabled.Border" options:Freeze="True" Color="#FFD9D9D9" />
+    <SolidColorBrush x:Key="ComboBox.Disabled.Editable.Background" options:Freeze="True" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ComboBox.Disabled.Editable.Border" options:Freeze="True" Color="#FFBFBFBF" />
+    <SolidColorBrush x:Key="ComboBox.Disabled.Editable.Button.Background" options:Freeze="True" Color="Transparent" />
+    <SolidColorBrush x:Key="ComboBox.Disabled.Editable.Button.Border" options:Freeze="True" Color="Transparent" />
+
+    <!--  ListBox -->
+    
+    <SolidColorBrush x:Key="ListBox.Static.Foreground" options:Freeze="True" Color="{StaticResource GrayColor4}" />
+    <SolidColorBrush x:Key="ListBox.Static.Background" options:Freeze="True" Color="Transparent" />
+    <SolidColorBrush x:Key="ListBox.Static.Border" options:Freeze="True" Color="{StaticResource Color.SilverLight}" />
+
+    <SolidColorBrush x:Key="ListBox.Disabled.Background" options:Freeze="True" Color="Transparent" />
+    <SolidColorBrush x:Key="ListBox.Disabled.Border" options:Freeze="True" Color="Transparent" />
+
+    <!--  ListBoxItem  -->
+    
+    <SolidColorBrush x:Key="Item.Static.Foreground" options:Freeze="True" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="Item.Static.Background" options:Freeze="True" Color="Transparent" />
+    <SolidColorBrush x:Key="Item.Static.Border" options:Freeze="True" Color="Transparent" />
+
+    <SolidColorBrush x:Key="Item.MouseOver.Foreground" options:Freeze="True" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="Item.MouseOver.Background" options:Freeze="True" Color="#52a6f7" />
+    <SolidColorBrush x:Key="Item.MouseOver.Border" options:Freeze="True" Color="#52a6f7" />
+
+    <SolidColorBrush x:Key="Item.SelectedInactive.Foreground" options:Freeze="True" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="Item.SelectedInactive.Background" options:Freeze="True" Opacity="0.1" Color="{StaticResource PrimaryColor}"/>
+    <SolidColorBrush x:Key="Item.SelectedInactive.Border" options:Freeze="True" Opacity="0.3" Color="{StaticResource PrimaryColor}"/>
+
+    <SolidColorBrush x:Key="Item.SelectedActive.Foreground" options:Freeze="True" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="Item.SelectedActive.Background" options:Freeze="True" Color="#eff3ff" />
+    <SolidColorBrush x:Key="Item.SelectedActive.Border" options:Freeze="True" Color="#52a6f7" />
+
+    <!--  HeaderedItemsControl Control  -->
+
+    <SolidColorBrush x:Key="HeaderedControl.Static.Foreground" options:Freeze="True" Color="{StaticResource BlackColor70}" />
+    <SolidColorBrush x:Key="HeaderedControl.Static.Background" options:Freeze="True" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="HeaderedControl.Static.Border" options:Freeze="True" Color="{StaticResource AccentColor6}" />
+
+    <!--  Tab Control  -->
+
+    <SolidColorBrush x:Key="TabControl.Static.Foreground" options:Freeze="True" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="TabControl.Static.Background" options:Freeze="True" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="TabControl.Static.Border" options:Freeze="True" Color="{StaticResource BlackColor50}" />
+
+    <SolidColorBrush x:Key="TabControl.Disabled.Foreground" options:Freeze="True" Opacity="0.7" Color="{StaticResource DisabledTextColor}" />
+    <SolidColorBrush x:Key="TabControl.Disabled.Background" options:Freeze="True" Color="{StaticResource DisabledBackgroundColor}" />
+    <SolidColorBrush x:Key="TabControl.Disabled.Border" options:Freeze="True" Color="{StaticResource DisabledBorderColor}" />
+
+    <!--  Tab Item  -->
+    
+    <SolidColorBrush x:Key="TabItem.Static.Foreground" options:Freeze="True" Color="#84869c" />
+    <SolidColorBrush x:Key="TabItem.Static.Background" options:Freeze="True" Color="#f7f3f7" />
+    <SolidColorBrush x:Key="TabItem.Static.Border" options:Freeze="True" Color="{StaticResource BlackColor10}" />
+
+    <SolidColorBrush x:Key="TabItem.MouseOver.Foreground" options:Freeze="True" Color="{StaticResource BlackColor70}" />
+    <SolidColorBrush x:Key="TabItem.MouseOver.Background" options:Freeze="True" Color="{StaticResource BackgroundColor.MouseOver}" />
+    <SolidColorBrush x:Key="TabItem.MouseOver.Border" options:Freeze="True" Color="Transparent" />
+
+    <SolidColorBrush x:Key="TabItem.Selected.Foreground" options:Freeze="True" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="TabItem.Selected.Background" options:Freeze="True" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="TabItem.Selected.Border" options:Freeze="True" Color="{StaticResource BlackColor50}" />
+
+    <SolidColorBrush x:Key="TabItem.Disabled.Foreground" options:Freeze="True" Opacity="0.7" Color="{StaticResource DisabledTextColor}" />
+    <SolidColorBrush x:Key="TabItem.Disabled.Background" options:Freeze="True" Color="{StaticResource DisabledBackgroundColor}" />
+    <SolidColorBrush x:Key="TabItem.Disabled.Border" options:Freeze="True" Color="Transparent" />
+
+    <!-- DataGrid -->
+
+    <SolidColorBrush x:Key="DataGrid.Static.Foreground" options:Freeze="True" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="DataGrid.Static.Background" options:Freeze="True" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="DataGrid.Static.Border" options:Freeze="True" Color="Transparent" />
+
+    <!--Static DataGrid row-->
+
+    <SolidColorBrush x:Key="DataGrid.Cell.Static.Foreground" options:Freeze="True" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="DataGrid.Cell.Static.Background" options:Freeze="True" Color="Transparent" />
+    <SolidColorBrush x:Key="DataGrid.Cell.Static.Border" options:Freeze="True" Color="Transparent" />
+
+    <SolidColorBrush x:Key="DataGrid.Row.Static.Foreground" options:Freeze="True" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="DataGrid.Row.Static.Background" options:Freeze="True" Color="Transparent" />
+    <SolidColorBrush x:Key="DataGrid.Row.Static.Border" options:Freeze="True" Color="Transparent" />
+
+    <!--Highlighted DataGrid row-->
+
+    <SolidColorBrush x:Key="DataGrid.Cell.MouseOver.Foreground" options:Freeze="True" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="DataGrid.Cell.MouseOver.Background" options:Freeze="True" Color="{StaticResource BackgroundColor.MouseOver}" />
+    <SolidColorBrush x:Key="DataGrid.Cell.MouseOver.Border" options:Freeze="True" Color="Transparent" />
+
+    <SolidColorBrush x:Key="DataGrid.Row.MouseOver.Foreground" options:Freeze="True" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="DataGrid.Row.MouseOver.Background" options:Freeze="True" Color="{StaticResource BackgroundColor.MouseOver}" />
+    <SolidColorBrush x:Key="DataGrid.Row.MouseOver.Border" options:Freeze="True" Color="Transparent" />
+
+    <!--Selected DataGrid row-->
+
+    <SolidColorBrush x:Key="DataGrid.Cell.Selected.Foreground" options:Freeze="True" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="DataGrid.Cell.Selected.Background" options:Freeze="True" Color="{StaticResource BackgroundColor.Selected}" />
+    <SolidColorBrush x:Key="DataGrid.Cell.Selected.Border" options:Freeze="True" Color="{StaticResource AccentColor}" />
+
+    <SolidColorBrush x:Key="DataGrid.Row.Selected.Foreground" options:Freeze="True" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="DataGrid.Row.Selected.Background" options:Freeze="True" Color="{StaticResource BackgroundColor.Selected}" />
+    <SolidColorBrush x:Key="DataGrid.Row.Selected.Border" options:Freeze="True" Color="{StaticResource AccentColor}" />
+
+    <!--Editing DataGrid cell-->
+
+    <SolidColorBrush x:Key="DataGrid.Cell.Editing.Foreground" options:Freeze="True" Color="{StaticResource GrayColor1}" />
+    <SolidColorBrush x:Key="DataGrid.Cell.Editing.Background" options:Freeze="True" Color="{StaticResource BackgroundColor.Focused}" />
+    <SolidColorBrush x:Key="DataGrid.Cell.Editing.Border" options:Freeze="True" Color="{StaticResource AccentColor}" />
+
+    <!--Invalid DataGrid cell-->
+
+    <SolidColorBrush x:Key="DataGrid.Cell.Invalid.Foreground" options:Freeze="True" Color="{StaticResource Color.Critical}" />
+    <SolidColorBrush x:Key="DataGrid.Cell.Invalid.Background" options:Freeze="True" Color="{StaticResource Color.Critical}" Opacity="0.2" />
+    <SolidColorBrush x:Key="DataGrid.Cell.Invalid.Border" options:Freeze="True" Color="{StaticResource Color.Critical}" />
+
+    <!--Disabled DataGrid cell-->
+
+    <SolidColorBrush x:Key="DataGrid.Cell.Disabled.Foreground" options:Freeze="True" Color="{StaticResource DisabledTextColor}" />
+    <SolidColorBrush x:Key="DataGrid.Cell.Disabled.Background" options:Freeze="True" Color="{StaticResource DisabledBackgroundColor}" />
+    <SolidColorBrush x:Key="DataGrid.Cell.Disabled.Border" options:Freeze="True" Color="{StaticResource DisabledBorderColor}" />
+
+    <!--Focused DataGrid row-->
+
+    <SolidColorBrush x:Key="DataGrid.Cell.Focused.Foreground" options:Freeze="True" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="DataGrid.Cell.Focused.Background" options:Freeze="True" Color="Transparent" />
+    <SolidColorBrush x:Key="DataGrid.Cell.Focused.Border" options:Freeze="True" Color="{StaticResource BlackColor}" />
+
+    <!-- DataGrid Editable ComboBox cell -->
+
+    <SolidColorBrush x:Key="DataGrid.ComboBox.Static.Foreground" options:Freeze="True" Color="{StaticResource GrayColor3}" />
+    <SolidColorBrush x:Key="DataGrid.ComboBox.Static.Background" options:Freeze="True" Color="Transparent" />
+    <SolidColorBrush x:Key="DataGrid.ComboBox.Static.Border" options:Freeze="True" Color="Transparent" />
+
+    <SolidColorBrush x:Key="DataGrid.ComboBox.MouseOver.Foreground" options:Freeze="True" Color="{StaticResource GrayColor5}" />
+    <SolidColorBrush x:Key="DataGrid.ComboBox.MouseOver.Background" options:Freeze="True" Color="{StaticResource AccentColor5}" />
+    <SolidColorBrush x:Key="DataGrid.ComboBox.MouseOver.Border" options:Freeze="True" Color="{StaticResource AccentColor5}" />
+
+    <SolidColorBrush x:Key="DataGrid.ComboBox.Pressed.Foreground" options:Freeze="True" Color="{StaticResource GrayColor3}" />
+    <SolidColorBrush x:Key="DataGrid.ComboBox.Pressed.Background" options:Freeze="True" Color="{StaticResource AccentColor5}" />
+    <SolidColorBrush x:Key="DataGrid.ComboBox.Pressed.Border" options:Freeze="True" Color="{StaticResource AccentColor6}" />
+
+    <SolidColorBrush x:Key="DataGrid.ComboBox.Disabled.Foreground" options:Freeze="True" Color="{StaticResource DisabledTextColor}" />
+    <SolidColorBrush x:Key="DataGrid.ComboBox.Disabled.Background" options:Freeze="True" Color="Transparent" />
+    <SolidColorBrush x:Key="DataGrid.ComboBox.Disabled.Border" options:Freeze="True" Color="Transparent" />
+
+    <!-- DataGrid Header -->
+
+    <SolidColorBrush x:Key="DataGrid.Header.Static.Foreground" options:Freeze="True" Color="{StaticResource PrimaryColor}" Opacity="0.5" />
+    <SolidColorBrush x:Key="DataGrid.Header.Static.Background" options:Freeze="True" Color="Transparent" />
+    <SolidColorBrush x:Key="DataGrid.Header.Static.Border" options:Freeze="True" Color="Transparent" />
+
+    <SolidColorBrush x:Key="DataGrid.Header.MouseOver.Foreground" options:Freeze="True" Color="{StaticResource PrimaryColor}" />
+    <SolidColorBrush x:Key="DataGrid.Header.MouseOver.Background" options:Freeze="True"  Color="{StaticResource AccentColor}" Opacity="0.1" />
+    <SolidColorBrush x:Key="DataGrid.Header.MouseOver.Border" options:Freeze="True" Color="{StaticResource AccentColor}" />
+
+    <SolidColorBrush x:Key="DataGrid.Header.Pressed.Foreground" options:Freeze="True" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="DataGrid.Header.Pressed.Background" options:Freeze="True" Opacity="0.9" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="DataGrid.Header.Pressed.Border" options:Freeze="True" Color="{StaticResource AccentColor4}" />
+
+    <SolidColorBrush x:Key="DataGrid.Header.Sorted.Foreground" options:Freeze="True" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="DataGrid.Header.Sorted.Background" options:Freeze="True" Opacity="0.01" Color="{StaticResource BlackColor}" />
+    <SolidColorBrush x:Key="DataGrid.Header.Sorted.Border" options:Freeze="True" Opacity="0.03" Color="{StaticResource BlackColor}" />
+
+    <!--  Disabled state brush  -->
+
+    <SolidColorBrush x:Key="DisabledControl.Background" options:Freeze="True" Color="{StaticResource DisabledBackgroundColor}" />
+    <SolidColorBrush x:Key="DisabledControl.Border" options:Freeze="True" Color="{StaticResource DisabledBorderColor}" />
+    <SolidColorBrush x:Key="DisabledControl.Foreground" options:Freeze="True" Color="{StaticResource DisabledForegroundColor}" />
+    <SolidColorBrush x:Key="DisabledControl.Foreground.Text" options:Freeze="True" Color="{StaticResource DisabledTextColor}" />
+
+    <LinearGradientBrush x:Key="DropShadowBrush" StartPoint="0,0" EndPoint="1,0">
+        <GradientStop Offset="0" Color="#33000000" />
+        <GradientStop Offset="1" Color="#00000000" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="HorizontalSeparatorBrush" StartPoint="0,0" EndPoint="1,0">
+        <GradientStop Offset="0" Color="#00000000" />
+        <GradientStop Offset="0.25" Color="#23000000" />
+        <GradientStop Offset="0.75" Color="#23000000" />
+        <GradientStop Offset="1" Color="#00000000" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="VerticalSeparatorBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Offset="0" Color="#00000000" />
+        <GradientStop Offset="0.3" Color="#33000000" />
+        <GradientStop Offset="0.7" Color="#33000000" />
+        <GradientStop Offset="1" Color="#00000000" />
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="IdealForegroundColorBrush" options:Freeze="True" Color="{StaticResource IdealForegroundColor}" />
+
+
+    <!--Virtual Keyboard-->
+
+    <SolidColorBrush x:Key="VirtualKeyboard.Background" Color="{StaticResource Color.VirtualKeyboard.Background}"/>
+
+    <SolidColorBrush x:Key="VirtualKeyboard.CharKeyBackground" Color="{StaticResource Color.VirtualKeyboard.CharKeyBackground}"/>
+    <SolidColorBrush x:Key="VirtualKeyboard.CharKeyForeground" Color="{StaticResource Color.VirtualKeyboard.CharKeyForeground}"/>
+
+    <SolidColorBrush x:Key="VirtualKeyboard.ModifierKeyBackground" Color="{StaticResource Color.VirtualKeyboard.ModifierKeyBackground}"/>
+    <SolidColorBrush x:Key="VirtualKeyboard.ModifierKeyForeground" Color="{StaticResource Color.VirtualKeyboard.ModifierKeyForeground}"/>
+
+    <SolidColorBrush x:Key="VirtualKeyboard.CommandKeyBackground" Color="{StaticResource Color.VirtualKeyboard.CommandKeyBackground}"/>
+    <SolidColorBrush x:Key="VirtualKeyboard.CommandKeyForeground" Color="{StaticResource Color.VirtualKeyboard.CommandKeyForeground}"/>
+
+</ResourceDictionary>

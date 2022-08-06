@@ -1,0 +1,65 @@
+﻿<Window x:Class="VirtualKeyboardSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:virtualKeyboard="clr-namespace:VirtualKeyboardSample.VirtualKeyboard"
+        xmlns:virtualKeyboardSample="clr-namespace:VirtualKeyboardSample"
+        x:Name="Window"
+        Title="MainWindow"
+        d:DataContext="{d:DesignInstance virtualKeyboardSample:MainWindow,
+                                         IsDesignTimeCreatable=True}"
+        mc:Ignorable="d">
+
+    <Grid Margin="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel HorizontalAlignment="Center">
+            <TextBox x:Name="TextBox1"
+                     Width="480"
+                     Height="64"
+                     HorizontalAlignment="Left"
+                     HorizontalContentAlignment="Center"
+                     FontSize="24"
+                     Style="{StaticResource TextBoxStyle.Default}"
+                     Text="{Binding InputText}" />
+
+            <TextBox x:Name="TextBox2"
+                     Width="480"
+                     Height="64"
+                     Margin="0,32"
+                     HorizontalAlignment="Left"
+                     HorizontalContentAlignment="Center"
+                     FontSize="24"
+                     virtualKeyboard:VirtualKeyboard.LayoutType="NumPad"
+                     Style="{StaticResource TextBoxStyle.Default}"
+                     Text="{Binding NumericValue}" />
+
+            <Button Width="128"
+                    Height="64"
+                    HorizontalAlignment="Right"
+                    Click="ButtonBase_OnClick"
+                    Content="Search"
+                    Style="{StaticResource ButtonStyle.Default}" />
+        </StackPanel>
+
+        <TextBlock Grid.Row="1"
+                   Margin="64"
+                   HorizontalAlignment="Center"
+                   Style="{StaticResource TextBlockStyle.H2}"
+                   Text="{Binding SearchText}" />
+
+        <Border Grid.Row="0"
+                Grid.RowSpan="3"
+                Margin="-24"
+                Background="Transparent"
+                Visibility="{Binding KeyboardVisibility}">
+            <virtualKeyboard:VirtualKeyboard TextBox="{Binding InputElement, Mode=OneWay}" Window="{Binding ElementName=Window}" />
+        </Border>
+
+    </Grid>
+</Window>

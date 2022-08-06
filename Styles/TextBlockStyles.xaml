@@ -1,0 +1,158 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--  Text styles  -->
+
+    <Style TargetType="{x:Type TextBlock}">
+        <Setter Property="FontFamily" Value="{StaticResource FontFamily.Global}" />
+        <Setter Property="LineStackingStrategy" Value="BlockLineHeight" />
+        <Setter Property="TextOptions.TextFormattingMode" Value="Display" />
+        <Setter Property="TextOptions.TextHintingMode" Value="Fixed" />
+        <Setter Property="TextOptions.TextRenderingMode" Value="Grayscale" />
+        <Setter Property="TextTrimming" Value="None" />
+        <Setter Property="TextWrapping" Value="Wrap" />
+    </Style>
+
+    <Style x:Key="TextBlockStyle.Default" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontFamily" Value="{StaticResource FontFamily.Global}" />
+
+        <!--<Setter Property="FontSize" Value="{StaticResource FontSize.Default}" />-->
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Foreground" Value="{StaticResource TextBlock.Static.Foreground}" />
+        <Setter Property="LineStackingStrategy" Value="BlockLineHeight" />
+        <Setter Property="TextOptions.TextFormattingMode" Value="Display" />
+        <Setter Property="TextOptions.TextHintingMode" Value="Fixed" />
+        <Setter Property="TextOptions.TextRenderingMode" Value="Grayscale" />
+        <Setter Property="TextTrimming" Value="CharacterEllipsis" />
+        <Setter Property="TextWrapping" Value="NoWrap" />
+
+        <Style.Triggers>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Foreground" Value="{StaticResource DisabledControl.Foreground.Text}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="TextBlockStyle.H1" BasedOn="{StaticResource TextBlockStyle.Default}" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="{StaticResource FontSize.H1}" />
+        <Setter Property="Foreground" Value="{StaticResource PrimaryBrush}" />
+    </Style>
+
+    <Style x:Key="TextBlockStyle.H2" BasedOn="{StaticResource TextBlockStyle.Default}" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="{StaticResource FontSize.H2}" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Foreground" Value="{StaticResource PrimaryBrush}" />
+    </Style>
+
+    <Style x:Key="TextBlockStyle.H3" BasedOn="{StaticResource TextBlockStyle.Default}" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="{StaticResource FontSize.H3}" />
+        <Setter Property="FontWeight" Value="Regular" />
+        <Setter Property="Foreground" Value="{StaticResource PrimaryBrush}" />
+    </Style>
+
+    <Style x:Key="TextBlockStyle.H4" BasedOn="{StaticResource TextBlockStyle.Default}" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="{StaticResource FontSize.H4}" />
+        <Setter Property="FontWeight" Value="Regular" />
+        <Setter Property="Foreground" Value="{StaticResource PrimaryBrush}" />
+        <Setter Property="TextWrapping" Value="Wrap" />
+    </Style>
+
+    <Style x:Key="TextBlockStyle.H5" BasedOn="{StaticResource TextBlockStyle.Default}" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="{StaticResource FontSize.H5}" />
+        <Setter Property="FontWeight" Value="Regular" />
+        <Setter Property="Foreground" Value="{StaticResource PrimaryBrush}" />
+    </Style>
+
+    <Style x:Key="TextBlockStyle.Null" BasedOn="{StaticResource TextBlockStyle.Default}" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="{StaticResource FontSize.H2}" />
+        <Setter Property="FontStyle" Value="Italic" />
+        <Setter Property="FontWeight" Value="Regular" />
+        <Setter Property="Foreground" Value="{StaticResource GrayBrushC}" />
+        <Setter Property="TextWrapping" Value="Wrap" />
+    </Style>
+
+    <Style x:Key="TextBlockStyle.Label" BasedOn="{StaticResource TextBlockStyle.Default}" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="{StaticResource FontSize.Label}" />
+        <Setter Property="FontWeight" Value="Regular" />
+        <Setter Property="Foreground" Value="{StaticResource TextBlock.Label.Foreground}" />
+    </Style>
+
+    <Style x:Key="TextBlockStyle.Value" BasedOn="{StaticResource TextBlockStyle.Default}" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="{StaticResource FontSize.Value}" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Foreground" Value="{StaticResource PrimaryBrush}" />
+        <Setter Property="Padding" Value="0,4" />
+    </Style>
+
+    <Style x:Key="TextBlockStyle.SmallLabel" BasedOn="{StaticResource TextBlockStyle.Default}" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="{StaticResource FontSize.SmallValue}" />
+        <Setter Property="FontWeight" Value="Regular" />
+        <Setter Property="Foreground" Value="{StaticResource PrimaryBrush50}" />
+        <Setter Property="Padding" Value="0,4" />
+    </Style>
+
+    <Style x:Key="TextBlockStyle.SmallValue" BasedOn="{StaticResource TextBlockStyle.Default}" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="{StaticResource FontSize.SmallValue}" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Foreground" Value="{StaticResource PrimaryBrush}" />
+    </Style>
+
+    <Style x:Key="TextBlockStyle.Date" BasedOn="{StaticResource TextBlockStyle.Default}" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="{StaticResource FontSize.H1}" />
+        <Setter Property="FontWeight" Value="Light" />
+        <Setter Property="Foreground" Value="{StaticResource WhiteBrush50}" />
+    </Style>
+
+    <Style x:Key="TextBlockStyle.Time" BasedOn="{StaticResource TextBlockStyle.Default}" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="{StaticResource FontSize.H1}" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Foreground" Value="{StaticResource WhiteBrush}" />
+    </Style>
+
+    <Style x:Key="TextBlockStyle.PageTitle" BasedOn="{StaticResource TextBlockStyle.Default}" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="{StaticResource FontSize.ExtraXLarge}" />
+        <Setter Property="Foreground" Value="{StaticResource PrimaryBrush}" />
+        <Setter Property="LineHeight" Value="{StaticResource FontSize.ExtraXLarge}" />
+    </Style>
+
+    <Style x:Key="TextBlockStyle.CurrentDirectory" BasedOn="{StaticResource TextBlockStyle.Default}" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="{StaticResource FontSize.ButtonCaption}" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Foreground" Value="{StaticResource PrimaryBrush}" />
+    </Style>
+
+
+    <Style x:Key="TextBlockStyle.VirtualKeyboard" BasedOn="{StaticResource TextBlockStyle.Default}" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="{StaticResource FontSize.VirtualKeyboard}" />
+        <Setter Property="FontWeight" Value="Regular" />
+        <Setter Property="Foreground" Value="{StaticResource VirtualKeyboard.CharKeyForeground}" />
+    </Style>
+
+    <Style x:Key="TextBlockStyle.TextBox" BasedOn="{StaticResource TextBlockStyle.Default}" TargetType="{x:Type TextBlock}">
+        <!--<Setter Property="LineHeight" Value="{StaticResource FontSize.TextBox}" />-->
+        <Setter Property="FontSize" Value="{StaticResource FontSize.TextBox}" />
+        <Setter Property="FontWeight" Value="Regular" />
+    </Style>
+
+    <Style x:Key="TextBlockStyle.TextBoxTag" BasedOn="{StaticResource TextBlockStyle.Default}" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="{StaticResource FontSize.TextBoxTag}" />
+        <Setter Property="FontWeight" Value="Light" />
+        <Setter Property="LineHeight" Value="{StaticResource FontSize.TextBox}" />
+        <Setter Property="Opacity" Value="0.5" />
+    </Style>
+
+    <Style x:Key="TextBlockStyle.DataGridCell" BasedOn="{StaticResource TextBlockStyle.Default}" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="{StaticResource FontSize.DataGrid.Cell}" />
+        <Setter Property="FontWeight" Value="Regular" />
+        <Setter Property="LineHeight" Value="{StaticResource FontSize.TextBox}" />
+    </Style>
+
+    <Style x:Key="TextBlockStyle.LoginFormLabel" BasedOn="{StaticResource TextBlockStyle.Default}" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="{StaticResource FontSize.Value}" />
+        <Setter Property="FontWeight" Value="Regular" />
+        <Setter Property="Foreground" Value="{StaticResource WhiteBrush}" />
+        <Setter Property="Padding" Value="0,24,0,8" />
+    </Style>
+
+
+</ResourceDictionary>
